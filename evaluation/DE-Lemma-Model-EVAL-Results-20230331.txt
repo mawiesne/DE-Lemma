@@ -1,0 +1,8 @@
+2023-31-31 21:55:56,370 INFO  [main] nlp.LemmatizerModelGsdEval - ud-gsd-2022-lemma-maxent Accuracy: 0.5
+2023-31-31 21:55:56,373 INFO  [main] nlp.LemmatizerModelGsdEval - ud-gsd-2022-lemma-maxent F1: 0.6667
+2023-31-31 21:56:21,238 INFO  [main] nlp.LemmatizerModelTuebaDWEval - tue-wikipedia-2022-lemma-maxent Accuracy: 0.88
+2023-31-31 21:56:21,238 INFO  [main] nlp.LemmatizerModelTuebaDWEval - tue-wikipedia-2022-lemma-maxent F1: 0.9362
+2023-31-31 21:56:21,951 INFO  [main] nlp.LemmatizerModelTuebaDPBuregEval - tue-bureg-2022-lemma-maxent Accuracy: 0.67
+2023-31-31 21:56:21,952 INFO  [main] nlp.LemmatizerModelTuebaDPBuregEval - tue-bureg-2022-lemma-maxent F1: 0.8024
+2023-31-31 21:56:24,231 INFO  [main] nlp.LemmatizerModelHdtEval - ud-hdt-2022-lemma-maxent Accuracy: 0.41
+2023-31-31 21:56:24,231 INFO  [main] nlp.LemmatizerModelHdtEval - ud-hdt-2022-lemma-maxent F1: 0.5816
