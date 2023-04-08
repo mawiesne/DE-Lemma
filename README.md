@@ -19,10 +19,6 @@ It is based on [Apache OpenNLP](https://github.com/apache/opennlp) and provides 
 - OpenNLP releases < 2.1.0 can't reliably load the lemmatizer model files of this project! This is due to [OpenNLP-1366](https://issues.apache.org/jira/browse/OPENNLP-1366) which was detected during work for **DE-Lemma**. The bug has been fixed via [PR-427](https://github.com/apache/opennlp/pull/427) and was included in version 2.1.0. 
 - Check and take care of your classpath so no older OpenNLP version is around!
 
-## Training details
-
-... will follow soon.
-
 ## Build
 Build the project via Apache Maven. 
 The command for the relevant parts is `mvn clean package`.   
@@ -56,5 +52,10 @@ INFO [main] DELemmaDemo (DELemmaDemo.java:30) - Found lemma 'Klinikum' for noun 
 ```
 
 ## Additional technical details
+
+... will follow soon.
+
+
+## Training details
 
 ... will follow soon.
