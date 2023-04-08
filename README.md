@@ -2,7 +2,7 @@
 
 ![Build Status](https://github.com/mawiesne/DE-Lemma/actions/workflows/maven.yml/badge.svg)
 
-DE-Lemma (_pronunced: de:e: le:ma:_) is an object-oriented lemmatizer for German texts with a focus on the (bio)medical domain.
+DE-Lemma (_pronounced_: de:e: le:ma:) is an object-oriented lemmatizer for German texts with a focus on the (bio)medical domain.
                 
 It is based on [Apache OpenNLP](https://github.com/apache/opennlp) and provides several pre-trained, binary Maximum-Entropy _models_ in the corresponding directory.   
 Those have been trained during October 2022 from freely available German treebanks.
