@@ -4,8 +4,7 @@
 
 DE-Lemma (_pronounced_: de:e: le:ma:) is an object-oriented lemmatizer for German texts with a focus on the (bio)medical domain.
                 
-It is based on [Apache OpenNLP](https://github.com/apache/opennlp) and provides several pre-trained, binary Maximum-Entropy _models_ in the corresponding directory.   
-Those have been trained during October 2022 from freely available German treebanks.
+It is based on [Apache OpenNLP](https://github.com/apache/opennlp) and provides several pre-trained, binary Maximum-Entropy _models_ in the corresponding directory. Those have been trained during October 2022 from freely available German treebanks.
 
 ## Requirements
 
@@ -44,7 +43,7 @@ Those models must reside a `models` directory, as the current code checks at thi
 For a first impression, just execute `DELemmaDemo.java` which will, by default, load the [DE-Lemma_UD-gsd-2022-maxent.bin](models%2FDE-Lemma_UD-gsd-2022-maxent.bin) 
 model resource. The loaded `Lemmatizer` instance will then find the lemmas for German (non-)**inflected** nouns from the (bio)medical domain.
 
-In the demo example, the German nouns `List.of("Ärzte", "Herzzusatztöne")` will be processed. 
+In the demo example, the German nouns `List.of("Ärzte", "Herzzusatztöne", ...)` will be processed. 
 The results are logged to STD out / console. It should be similar to:
  
 ```
