@@ -1,14 +1,25 @@
 # DE-Lemma
 
-DE-lemma is an object-oriented lemmatizer for German texts with a focus on the (bio)medical domain.
+![Build Status](https://github.com/mawiesne/DE-Lemma/actions/workflows/maven.yml/badge.svg)
+
+DE-Lemma (_pronunced: de:e: le:ma:_) is an object-oriented lemmatizer for German texts with a focus on the (bio)medical domain.  
 It is based on [Apache OpenNLP](https://github.com/apache/opennlp).
                 
+It provides several pre-trained, binary Maximum-Entropy _models_ in the corresponding directory.  
+Those have been trained during October 2022 from freely available German treebanks.
+
 ## Requirements
-- Java / [OpenJDK](https://adoptium.net/de/) in version 17+
+
+### Build
 - [Apache Maven](https://maven.apache.org) in version 3.6+
 
-It provides several pre-trained, binary Maximum-Entropy _models_ in the corresponding directory.
-Those have been trained during October 2022 from freely available German treebanks.
+### Runtime
+- Java / [OpenJDK](https://adoptium.net/de/) in version 17+
+- [Apache OpenNLP](https://github.com/apache/opennlp) in version 2.1.0+ 
+ 
+#### Notes: 
+- OpenNLP releases < 2.1.0 can't reliably load the lemmatizer model files! This is due to [OpenNLP-1366](https://issues.apache.org/jira/browse/OPENNLP-1366) which was detected during work for **DE-Lemma**. The bug has been fixed via [PR-427](https://github.com/apache/opennlp/pull/427) and was included in version 2.1.0. 
+- Check and take care of your classpath so no older OpenNLP version is around!
 
 ## Training details
 
@@ -16,7 +27,7 @@ Those have been trained during October 2022 from freely available German treeban
 
 ## Build
 Build the project via Apache Maven. 
-The command for the relevant parts is `mvn clean package`. 
+The command for the relevant parts is `mvn clean package`.   
 This should download all required dependencies which are:
 
 1. Apache OpenNLP, 
@@ -24,10 +35,10 @@ This should download all required dependencies which are:
 3. slf4j + log4j2 bindings.
 
 If you want to re-use the current, experimental version of **DE-Lemma** in your projects, 
-execute `mvn clean install` to transport the bundled _jar_ file in your local `.m2` folder.
+execute `mvn clean install` to transport the bundled _jar_ file to your local `.m2` folder.
 
 Note: 
-You have to select one or more model files and copy it over to the execution environment. 
+You have to select one or more model files and copy it over to the execution environment.  
 Those models must reside a `models` directory, as the current code checks at this directory name.
      
 ## Usage
