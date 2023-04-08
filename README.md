@@ -2,10 +2,9 @@
 
 ![Build Status](https://github.com/mawiesne/DE-Lemma/actions/workflows/maven.yml/badge.svg)
 
-DE-Lemma (_pronunced: de:e: le:ma:_) is an object-oriented lemmatizer for German texts with a focus on the (bio)medical domain.  
-It is based on [Apache OpenNLP](https://github.com/apache/opennlp).
+DE-Lemma (_pronunced: de:e: le:ma:_) is an object-oriented lemmatizer for German texts with a focus on the (bio)medical domain.
                 
-It provides several pre-trained, binary Maximum-Entropy _models_ in the corresponding directory.  
+It is based on [Apache OpenNLP](https://github.com/apache/opennlp) and provides several pre-trained, binary Maximum-Entropy _models_ in the corresponding directory.   
 Those have been trained during October 2022 from freely available German treebanks.
 
 ## Requirements
@@ -18,7 +17,7 @@ Those have been trained during October 2022 from freely available German treeban
 - [Apache OpenNLP](https://github.com/apache/opennlp) in version 2.1.0+ 
  
 #### Notes: 
-- OpenNLP releases < 2.1.0 can't reliably load the lemmatizer model files! This is due to [OpenNLP-1366](https://issues.apache.org/jira/browse/OPENNLP-1366) which was detected during work for **DE-Lemma**. The bug has been fixed via [PR-427](https://github.com/apache/opennlp/pull/427) and was included in version 2.1.0. 
+- OpenNLP releases < 2.1.0 can't reliably load the lemmatizer model files of this project! This is due to [OpenNLP-1366](https://issues.apache.org/jira/browse/OPENNLP-1366) which was detected during work for **DE-Lemma**. The bug has been fixed via [PR-427](https://github.com/apache/opennlp/pull/427) and was included in version 2.1.0. 
 - Check and take care of your classpath so no older OpenNLP version is around!
 
 ## Training details
