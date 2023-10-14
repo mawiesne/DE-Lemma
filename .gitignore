@@ -1,3 +1,8 @@
+# Larger, binary model files shall stay outside of repo
+/models/DE-Lemma_UD-hdt-2022-maxent.bin
+/models/DE-Lemma_Tue-Wiki-2022-maxent.bin
+/models/DE-Lemma_Tue-BuReg-2022-maxent.bin
+
 # Idea folder
 .idea
 *.iml
