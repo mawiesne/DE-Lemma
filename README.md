@@ -72,8 +72,9 @@ with it.
 If you use **DE-Lemma** models or the lemmatizer code in scientific work, please cite the 
 [GMDS 2023](https://www.gmds2023.de/proceedings) paper as follows:
 
+> :memo: <br>
 Wiesner M. _DE-Lemma: A Maximum-Entropy Based Lemmatizer for German Medical Text._ 
-Studies in Health Technology and Informatics. 2023 Sep 12;**307**:189-195. 
+Studies in Health Technology and Informatics. 2023 Sep 12;**307**:189-195.
 DOI: [10.3233/SHTI230712](https://doi.org/10.3233/SHTI230712), 
 PMID: [37697853](https://www.ncbi.nlm.nih.gov/pubmed/37697853)
 
