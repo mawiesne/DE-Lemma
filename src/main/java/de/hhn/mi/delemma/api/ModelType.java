@@ -1,7 +1,6 @@
 package de.hhn.mi.delemma.api;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Arrays;
 
 public enum ModelType {
 
@@ -13,28 +12,19 @@ public enum ModelType {
 
     private final String textValue;
 
-    private static final Map<String, ModelType> stringToEnum = new HashMap<>();
-
-    static // Initialize map from constant name to enum constant
-    {
-        for(ModelType cValue : values()) {
-            stringToEnum.put(cValue.toString(), cValue);
-        }
-    }
-
-    ModelType(String textValue)
-    {
+    ModelType(String textValue) {
         this.textValue = textValue;
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return textValue;
     }
 
-    public static ModelType fromString(String textValue)
-    {
-        return stringToEnum.get(textValue);
+    public static ModelType fromString(String textValue) {
+        return Arrays.stream(ModelType.values())
+                .filter(e -> e.textValue.equalsIgnoreCase(textValue))
+                .findFirst()
+                .orElse(LEMMATIZER_MODEL_DEFAULT);
     }
 }
