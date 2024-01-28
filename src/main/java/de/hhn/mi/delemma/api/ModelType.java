@@ -1,6 +1,6 @@
 package de.hhn.mi.delemma.api;
 
-import java.util.Arrays;
+import java.util.stream.Stream;
 
 public enum ModelType {
 
@@ -22,7 +22,7 @@ public enum ModelType {
     }
 
     public static ModelType fromString(String textValue) {
-        return Arrays.stream(ModelType.values())
+        return Stream.of(ModelType.values())
                 .filter(e -> e.textValue.equalsIgnoreCase(textValue))
                 .findFirst()
                 .orElse(LEMMATIZER_MODEL_DEFAULT);
