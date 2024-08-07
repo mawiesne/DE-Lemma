@@ -1,6 +1,9 @@
 # DE-Lemma
 
-![Build Status](https://github.com/mawiesne/DE-Lemma/actions/workflows/maven.yml/badge.svg)
+[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/mawiesne/DE-Lemma/main/LICENSE)
+[![Build Status](https://github.com/mawiesne/DE-Lemma/actions/workflows/maven.yml/badge.svg)](https://github.com/mawiesne/DE-Lemma/actions)
+[![Contributors](https://img.shields.io/github/contributors/mawiesne/DE-Lemma)](https://github.com/mawiesne/DE-Lemma/graphs/contributors)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/mawiesne/DE-Lemma.svg)](https://github.com/mawiesne/DE-Lemma/pulls) 
 
 DE-Lemma (_pronounced_: de:e: le:ma:) is an object-oriented lemmatizer for German texts with a focus on the (bio)medical domain.
                 
