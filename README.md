@@ -42,6 +42,12 @@ Those models must reside in the `models` directory, as the current code inspects
 For a first impression, just execute `DELemmaDemo.java` which will, by default, load the [DE-Lemma_UD-gsd-2022-maxent.bin](models%2FDE-Lemma_UD-gsd-2022-maxent.bin) 
 model resource. The loaded `Lemmatizer` instance will then find the lemmas for German (non-)**inflected** nouns from the (bio)medical domain.
 
+> [!IMPORTANT]  
+> For reasons of limited LFS storage, only the _DE-Lemma_UD-gsd-2022-maxent.bin_ model will be included in the `models` directory of this Git repository, if you clone this repository.
+> You will have to download all other [model files](https://download.it.hs-heilbronn.de/de-lemma/) separately.
+
+Once retrieved, place those model files in the `models` directory to start experimenting with it.
+
 In the demo example, the German nouns `List.of("Ärzte", "Herzzusatztöne", ...)` will be processed. 
 The results are logged to STD out / console. It should be similar to:
  
@@ -64,12 +70,10 @@ The complete set of files consists of four models:
 | DE-Lemma_Tue-BuReg-2022-maxent.bin | 3.9M | [Yes](https://download.it.hs-heilbronn.de/de-lemma/DE-Lemma_Tue-BuReg-2022-maxent.bin) |
 | DE-Lemma_Tue-Wiki-2022-maxent.bin | 131M | [Yes](https://download.it.hs-heilbronn.de/de-lemma/DE-Lemma_Tue-Wiki-2022-maxent.bin)  |
 
-as reported in the paper. All trained models were evaluated for lemma prediction performance, see **Table 3** in the paper.
+as reported in the paper. 
 
-If you clone this repository, only the _DE-Lemma_UD-gsd-2022-maxent.bin_ model will be included in the `models`
-directory of this Git repository. For reasons of limited storage, you'll have to download all other
-[model files](https://download.it.hs-heilbronn.de/de-lemma/)  separately. Once retrieved, place those model files in the `models` directory to start experimenting
-with it.
+> [!NOTE]  
+> All trained models were evaluated for lemma prediction performance, see **Table 3** in the paper.
 
 ## How to cite?
 If you use **DE-Lemma** models or the lemmatizer code in scientific work, please cite the 
